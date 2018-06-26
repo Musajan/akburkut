@@ -1,6 +1,5 @@
-package com.akburkut.tv.cms.akburkut.concurrency.example;
+package com.akburkut.tv.cms.akburkut.concurrency.example.atomic;
 
-import com.akburkut.tv.cms.akburkut.concurrency.annoations.NotThreadSafe;
 import com.akburkut.tv.cms.akburkut.concurrency.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
 
@@ -12,13 +11,13 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @Author: Sherlock
- * @Description: 并发测试-线程不安全
+ * @Description: 并发测试-线程安全
  * @Date: Created in 14:30 2018/6/26
  * @Modified By:
  */
 @Slf4j
 @ThreadSafe
-public class CountExample2 {
+public class AtomicExample1 {
 
     public static int TOTAL_CLIENT = 5000;// 请求总数
     public static int TOTAL_THREAD = 200;// 同时并发执行的线程数
